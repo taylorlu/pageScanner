@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="Yq2-DU-hmq">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page Scan View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PageScanViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C17-G5-npV">
+                                <rect key="frame" x="98" y="518" width="124" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="take photo"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="dkx-z0-nzr" eventType="touchUpInside" id="ixv-Tx-x5f"/>
+                                    <action selector="takePhotoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chW-Bx-Oz2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="E0N-qF-Gwp">
+                                <rect key="frame" x="42" y="228" width="237" height="287"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="JlW-2w-033">
+                                <rect key="frame" x="78" y="20" width="165" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="capImageView" destination="E0N-qF-Gwp" id="Cqa-DO-YhN"/>
+                        <outlet property="predImageView" destination="JlW-2w-033" id="Kdb-DB-jCL"/>
+                        <outlet property="takeBtn" destination="C17-G5-npV" id="V4v-tF-F0q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="104"/>
+        </scene>
+        <!--Page Search View Controller-->
+        <scene sceneID="aij-DA-0k6">
+            <objects>
+                <viewController id="EaJ-dr-y2X" customClass="PageSearchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="voL-qL-jDa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="OSX-tY-Acp">
+                                <rect key="frame" x="2" y="20" width="102" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="6hK-3o-QN7">
+                                <rect key="frame" x="34" y="230" width="240" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3xF-UG-ASD">
+                                <rect key="frame" x="94" y="522" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="take photo"/>
+                                <connections>
+                                    <action selector="takePhotoAction:" destination="EaJ-dr-y2X" eventType="touchUpInside" id="A8p-7i-bw0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="grE-ra-OBj">
+                                <rect key="frame" x="112" y="20" width="97" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="hqj-sw-GGd">
+                                <rect key="frame" x="222" y="20" width="97" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="capImageView" destination="6hK-3o-QN7" id="nGw-jh-Isr"/>
+                        <outlet property="pre2ImageView" destination="grE-ra-OBj" id="qP5-Y3-FJF"/>
+                        <outlet property="pre3ImageView" destination="hqj-sw-GGd" id="7k2-js-GEd"/>
+                        <outlet property="predImageView" destination="OSX-tY-Acp" id="GPT-Rj-Kxo"/>
+                        <outlet property="takeBtn" destination="3xF-UG-ASD" id="8pQ-Rq-h9Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXM-Dp-QMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="104"/>
+        </scene>
+        <!--Image Entry View Controller-->
+        <scene sceneID="HKl-ZB-p5E">
+            <objects>
+                <viewController id="Yq2-DU-hmq" customClass="ImageEntryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NW4-1K-crO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="9cR-XS-NFV">
+                                <rect key="frame" x="62" y="7" width="195" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Be-f2-htP">
+                                <rect key="frame" x="117" y="277" width="86" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="录 入"/>
+                                <connections>
+                                    <action selector="uploadAction:" destination="Yq2-DU-hmq" eventType="touchUpInside" id="5K9-Ld-azY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ywo-c2-Mwx">
+                                <rect key="frame" x="16" y="277" width="82" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="拍 照"/>
+                                <connections>
+                                    <action selector="takePhoneAction:" destination="Yq2-DU-hmq" eventType="touchUpInside" id="csg-Bq-YRE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ssw-OY-Re0">
+                                <rect key="frame" x="249" y="277" width="55" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="检 索"/>
+                                <connections>
+                                    <action selector="retrieveAction:" destination="Yq2-DU-hmq" eventType="touchUpInside" id="XVU-Si-eRI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="JlN-9r-WTY">
+                                <rect key="frame" x="85" y="323" width="150" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T7b-6B-rnN"/>
+                    <connections>
+                        <outlet property="enterBtn" destination="2Be-f2-htP" id="fuT-lP-ugo"/>
+                        <outlet property="imageView" destination="9cR-XS-NFV" id="iTc-9I-u6e"/>
+                        <outlet property="pdImageView" destination="JlN-9r-WTY" id="110-Xc-vSE"/>
+                        <outlet property="retrieveBtn" destination="ssw-OY-Re0" id="HSz-ci-CpV"/>
+                        <outlet property="takePhotoBtn" destination="ywo-c2-Mwx" id="JB7-gJ-M0A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALe-bN-3va" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="745"/>
+        </scene>
+    </scenes>
+</document>
